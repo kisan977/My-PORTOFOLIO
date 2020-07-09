@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html,body{
+	margin:0;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+
+
+:root{
+
+--primary-color:#4458dc;
+--primary-color2:#854fee;
+--title-color:#141313;
+--text-color:#777777;
+--border-color:#201f1f17;
+--gradient-color:linear-gradient(90deg,#4458dc 0%,#854fee 100%);
+--shadow-color: 0px 10px 30px rgba(118,85,225,0.3);
+--box-shadow:0px 10px 30px rgba(57,56,61,0.205);
+ 
+ --roboto:"Roboto",cursive;
+
+
+}
+
+
+
+/*start navigation menu*/
+
+header{
+	margin-top: -2rem;
+}
+
+
+
+
+header a{
+	font-family: "Roboto",cursive;
+	font-size:1.2rem;
+	color: black;
+	font-weight: 600;
+
+}
+
+header .nav-item:last-child{
+	padding-right: 3rem;
+}
+header .nav-item{
+	padding: 0.8rem;
+
+}
+
+
+header .navbar-brand{
+	font-size: 2.6rem;
+	color: blue;
+	margin-left: 4rem;
+}
+
+
+header .nav-link:hover{
+color:#4458dc; 
+}
+
+/*end navigation menu*/
+
+
+
+/*start about section*/
+
+
+.site-main{
+	margin-bottom: 1rem;
+}
+.site-main .site-banner {
+    background: url(images/home-banner.png) no-repeat 0% 50%;
+}
+
+.site-main .site-banner .site-title h3{
+    padding-top: 35%;
+    font-weight: 500;
+}
+
+.site-main .site-banner .site-title h3::after{
+    content: " ";
+    height: 2px;
+    width: 18vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+
+.site-main .site-banner .site-title h1{
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+.site-main .site-banner .site-title h4{
+    font-size: 1.5rem;
+}
+
+.site-main .site-banner .banner-image > img{
+    padding: 7rem 0;
+    width: 90rem;
+}
+
+.title-text{
+    font: normal bold 50px/ 72px var(--roboto);
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+
+
+.button{
+    padding: .8rem 2.2rem;
+    font: normal 500 16px/20px var(--roboto);
+    position: relative;
+    border: 3px solid transparent;
+    border-radius: 4px;
+}
+
+.button.primary-button{
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    color: whitesmoke;
+    transition: background .6s ease;
+    box-shadow: var(--box-shadow);
+}
+
+.button.primary-button:hover{
+    background: whitesmoke;
+    background-clip: padding-box;
+    color: black;
+}
+
+.button.primary-button::after, .button.secondary-button::after{
+    position: absolute;
+    top: -2px; left: -2px;
+    bottom: -2px;  right: -2px;
+    background: var(--gradient-color);
+    content: ' ';
+    z-index: -1;
+    border-radius: 4px;
+}
+
+.button.secondary-button{
+    background: white;
+    background-clip: padding-box;
+    transition: background .6s ease;
+}
+
+.button.secondary-button:hover{
+    background: var(--gradient-color);
+    color: whitesmoke;
+    box-shadow: var(--box-shadow);
+}
+
+
+
+
+button:focus,
+button:active
+button:hover
+.btn:active,
+.btn.active{
+    outline: 0px !important;
+    box-shadow: none !important;
+}
+
+/*end about section*/
+
+
+
+
+/*start main section*/
+.section1{
+	padding:20vmin 0;
+	margin-bottom: 10rem;
+}
+.section1 .row .col-md-6 .pray img{
+
+
+	opacity: 0.9;
+	width: 80%;
+	border-radius: 0.2em;
+
+}
+
+.section1 .row .col-md-6:last-child{
+	position: relative;
+}
+
+.section1 .row .col-md-6 .panel{
+	position: absolute;
+top: 6vmin;
+left: -17vmin;
+border-radius: 3px;
+background-color: #fff;
+text-align: left;
+padding: 13vmin 5vmin 15vmin 10vmin;
+box-shadow: 0px 25px 42px rgba(0,0,0,0.2);
+font-family: var(--Rubik-font);
+z-index: 1;
+	}
+
+	.section1 .row .col-md-6 .panel h1{
+		font-weight: bold;
+		padding:0.4em 0;
+		font-size: 2em;
+	}
+
+	.section1 .row .col-md-6 .panel p{
+		font-size: 0.9em;
+		color: rgba(0,0,0,0.5);
+	}
+
+
+.line-bottom{
+
+color: #000;
+font-family: "Poppins",sans-serif;
+font-size: 36px;
+font-weight: 800;
+line-height: 51.4333px;
+margin-bottom: 3rem;
+margin-top: 0px;
+padding-bottom: 10px;
+position: relative;
+
+
+}
+.text-theme-colored{
+
+
+	box-sizing: border-box;
+color: rgb(0, 140, 68);
+font-family: "Poppins",sans-serif;
+font-size: 36px;
+font-weight: 600;
+line-height: 51.4333px;
+visibility: visible;
+
+}
+
+
+/*end main section*/
+
+
+
+/*start section2*/
+
+
+.section2{
+	margin-bottom: 15rem;
+
+	
+}
+
+.flex-wrapper {
+  display: flex;
+flex-direction: row;
+}
+
+.single-chart {
+  width: 33%;
+  justify-content: space-around ;
+}
+
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 250px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart.orange .circle {
+  stroke: #ff9f00;
+}
+
+.circular-chart.green .circle {
+  stroke: #4CC790;
+}
+
+.circular-chart.blue .circle {
+  stroke: #3c9ee5;
+}
+
+.percentage {
+  fill: #666;
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
+}
+
+
+/*end section2*/
+
+
+
+.section3{
+	margin-bottom: 15rem;
+}
+
+
+
+/*start section4*/
+
+
+.section4{
+		margin-bottom: 15rem;
+}
+.team_header h1{
+  font-size: 36px;
+  font-weight: bold;
+  color: #555;
+}
+
+.team_header p{
+color: #000;
+font-weight: 600;
+}
+.man_header h3{
+
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+}
+
+.man_header img{
+  margin-top: -50px;
+}
+
+
+
+.man_header i{
+  font-size: 26px;
+  color: #555;
+}
+
+
+
+.man_header p{
+  font-weight: 500;
+}
+
+.man_header .card{
+  border-radius: 0;
+  box-shadow: 5px 5px 15px #e74c3c;
+  transition: all 0.3s ease-in;
+
+}
+
+.man_header .card:hover{
+
+  background-color: #e74c3c;
+  color: #fff;
+  border-radius: 5px;
+  border:none;
+  box-shadow: 5px 5px 10px #9E9E9E;
+}
+
+.man_header .card :hover h3, .man_header .card:hover i{
+  color: #fff;
+}
+
+
+/*start section4*/
+
+
+.form{
+	width: 80%;
+margin-left: 10%;
+margin-bottom: 10%;
+}
+
+/*end section4*/
+
+
+
+
+.section5{
+		margin-bottom: 15rem;
+}
+
+
+
+/* start footer section*/
+
+
+footer{
+	background-color: rgba(0,0,0,0.815);
+	overflow-x: hidden;
+	padding: 12vmin 18vmin;
+}
+footer p span{
+	color: #ff512f;
+	font-weight: 600;
+}
+footer input{
+	border:none !important;
+}
+footer input::placeholder{
+	color: white !important;
+}
+
+.input-group-prepend .input-group-text{
+	background: var(--bggradient);
+	border: none;
+}
+footer .column i{
+	color: #dd2476;
+}
+
+footer .column i+i{
+	padding: 0 0.5em;
+}
+
+
+
+/*end footer section*/

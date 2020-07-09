@@ -1,0 +1,58 @@
+@media (max-width: 480px){
+
+header .navbar-brand{
+	margin-left: 0rem !important;
+}
+
+.section1 .row .col-md-6 .panel h1{
+	text-align: center;
+}
+
+.section1 .row .col-md-6 .panel p{
+	margin-left: 2rem;
+}
+.section1{
+	margin-bottom: 40rem;
+}
+
+
+
+ .section2 .TECHINICAL {
+ 	margin-bottom: 4rem;
+ }
+
+ .section2{
+ 	margin-top: 40rem;
+ }
+
+ .man_header .card{
+    margin-bottom: 5rem;
+  }
+
+  footer .row .col-md-5{
+	margin-bottom: 2rem;
+}
+}
+
+
+
+@media (max-width: 768px){
+
+.section1 .row .col-md-6 .panel{
+	padding-bottom: 0vmin;
+}
+
+.section1{
+	margin-bottom: 20rem;
+}
+
+ .man_header .card{
+    margin-bottom: 5rem;
+  }
+
+.mobile{
+	font-size: 14px;
+}
+
+
+}
